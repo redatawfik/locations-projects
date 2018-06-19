@@ -14,9 +14,15 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
+<<<<<<< HEAD
             android:value="AIzaSyCBJOxO4mfqgJdmxmYWCsJokx80CED4Kko" />
         <meta-data
             android:name="com.google.android.gms.version"
+=======
+            android:value="put_your_api_key"/>
+
+        <meta-data android:name="com.google.android.gms.version"
+>>>>>>> 58ed38f3b1f1c9c5ffb04681a0a9424bf8599a0d
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".MainActivity">
