@@ -17,9 +17,6 @@ import com.google.android.gms.location.places.ui.PlacePicker;
 public class MainActivity extends AppCompatActivity {
 
 
-    TextView tv;
-    Button bu;
-
 
     int PLACE_PICKER_REQUEST = 1;
 
@@ -27,10 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        tv = findViewById(R.id.txt_view);
-        bu = findViewById(R.id.start_picker_button);
-
 
     }
 
@@ -57,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 Place place = PlacePicker.getPlace(data, this);
                 String toastMsg = String.format("Place: %s" +"\n", place.getName());
-                tv.setText(toastMsg);
-                tv.append(String.valueOf(place.getLatLng()));
+
             }
         }
     }
